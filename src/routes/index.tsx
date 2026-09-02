@@ -92,7 +92,7 @@ function Index() {
               <Reveal delay={60}>
                 <h1 className="mt-6 text-4xl leading-[1.08] font-extrabold text-navy-foreground sm:text-5xl lg:text-[3.4rem]">
                   Empowering a<span className="text-gradient-teal block">healthier world</span>
-                  without boundaries.
+                  without boundaries
                 </h1>
               </Reveal>
 
@@ -171,6 +171,18 @@ function Index() {
         </div>
       </section>
 
+      {/* Our Capabilities Hub */}
+      <section className="py-16 sm:py-20">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="Our Capabilities"
+            title="What We Manufacture"
+            description="A single manufacturing partner across pharmaceutical and nutraceutical dosage forms, development and research services."
+          />
+          <HubSpoke />
+        </div>
+      </section>
+
       {/* Export markets marquee */}
       <section className="overflow-hidden py-14 sm:py-16">
         <Reveal className="container-page mb-6 text-center">
@@ -227,13 +239,8 @@ function Index() {
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
                 {company.name} is an emerging Pharmaceutical &amp; Nutraceutical manufacturing
-                company founded by {company.founders.join(" and ")}, with extensive expertise in
-                contract manufacturing.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                We specialize in Tablets, Capsules, Injectables, Eye Drops, Ointments, API
-                intermediates and services including CMO, CDMO, CRO, Animal Health Products, Flavors
-                &amp; Fragrances, Vitamins, Fine &amp; Specialty Chemicals.
+                company founded by {company.founders.join(" and ")}, who bring extensive experience
+                and expertise in the pharmaceutical formulation domain.
               </p>
               <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {["Tablets", "Capsules", "Injectables", "Eye Drops", "Ointments", "API"].map(
@@ -259,27 +266,21 @@ function Index() {
         </div>
       </section>
 
-      {/* Our Capabilities Hub */}
-      <section className="py-16 sm:py-20">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Our Capabilities"
-            title="What We Manufacture"
-            description="A single manufacturing partner across pharmaceutical and nutraceutical dosage forms, development and research services."
-          />
-          <HubSpoke />
-        </div>
-      </section>
-
-      {/* Services Overview */}
+      {/* Our Products & Our Services */}
       <section className="bg-surface py-16 sm:py-20">
         <div className="container-page">
           <SectionHeading
-            eyebrow="Our Services"
-            title="Complete Manufacturing & Development Services"
-            description="From formulation and development through to commercial supply, we deliver end-to-end pharmaceutical and nutraceutical solutions."
+            eyebrow="What We Offer"
+            title="Our Products & Our Services"
+            description="From formulation and development through to commercial supply, we deliver end-to-end pharmaceutical and nutraceutical products and services."
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <Reveal className="mt-14 text-center">
+            <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">
+              Our Services
+            </p>
+          </Reveal>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => {
               const Icon = resolveIcon(service.icon);
               return (
@@ -311,18 +312,13 @@ function Index() {
               );
             })}
           </div>
-        </div>
-      </section>
 
-      {/* Product Categories */}
-      <section className="py-16 sm:py-20">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Our Products"
-            title="150+ Pharmaceutical & Nutraceutical Products"
-            description="APIs, finished formulations, supplements and intermediates manufactured to international standards."
-          />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Reveal className="mt-16 text-center">
+            <p className="text-xs font-bold tracking-[0.2em] text-primary uppercase">
+              Our Products
+            </p>
+          </Reveal>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {productCategories.map((category, index) => (
               <Reveal
                 key={category.slug}
@@ -355,11 +351,11 @@ function Index() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-surface py-16 sm:py-20">
+      <section className="py-16 sm:py-20">
         <div className="container-page">
           <SectionHeading
             eyebrow="Why Choose Us"
-            title="Trusted by Pharmaceutical Brands Worldwide"
+            title="Why Choose GM Pharma"
             description="We deliver quality-driven manufacturing with scientific rigor and uncompromising standards."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -549,7 +545,7 @@ function Index() {
               Ready to Get Started?
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-primary-foreground/85">
-              Share your requirements and let's build the right product together.
+              Share your requirements and let's build the right solution together.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
               <Button

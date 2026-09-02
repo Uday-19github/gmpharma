@@ -5,7 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { Button } from "@/components/ui/button";
-import { company, mapsQuery, whatsappLink } from "@/data/company";
+import { company, excellenceStatement, mapsQuery, trustQuote, whatsappLink } from "@/data/company";
 
 const title = "Contact GM Pharma — Bangalore Office & Hindupur Factory";
 const description =
@@ -89,12 +89,37 @@ function ContactPage() {
         </div>
       </section>
 
+      {/* Transforming Healthcare Through Excellence */}
+      <section className="py-16 sm:py-20">
+        <div className="container-page mx-auto max-w-3xl">
+          <SectionHeading
+            eyebrow="Our Commitment"
+            title="Transforming Healthcare Through Excellence"
+          />
+          <div className="mt-8 space-y-4">
+            {excellenceStatement.map((paragraph, index) => (
+              <Reveal key={index} delay={index * 60}>
+                <p className="text-base leading-relaxed text-muted-foreground">{paragraph}</p>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal
+            delay={140}
+            className="mt-8 rounded-2xl border border-border bg-surface p-6 text-center"
+          >
+            <p className="font-display text-base leading-relaxed text-navy italic">
+              "{trustQuote}"
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="bg-surface py-16 sm:py-20">
         <div className="container-page grid items-center gap-10 lg:grid-cols-2">
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Enquiries"
+              eyebrow="Get in Touch"
               title="Send a detailed manufacturing enquiry"
               description="The request-a-quote form captures your service, product, quantity and market so we can respond precisely."
             />

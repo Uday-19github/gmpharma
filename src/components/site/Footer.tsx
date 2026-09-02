@@ -16,7 +16,7 @@ export function Footer() {
     <footer className="gradient-navy text-navy-foreground">
       <div className="container-page grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-1">
-          <Logo onDark />
+          <Logo />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-navy-foreground/75">
             {company.shortDescription}
           </p>

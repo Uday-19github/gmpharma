@@ -192,10 +192,46 @@ export const whyChooseUs = [
 ] as const;
 
 export const vision =
-  "Empowering a healthier world without boundaries, G M Pharma pioneers transformative healthcare through cutting-edge science, uncompromising quality, and relentless innovation, shaping a brighter, disease-free future for all humanity.";
+  "Empowering a healthier world without boundaries, GM Pharma pioneers transformative healthcare through cutting-edge science, uncompromising quality, and relentless innovation, shaping a brighter, disease-free future for all humanity.";
 
 export const mission =
   "To deliver exceptional pharmaceutical solutions that address unmet medical needs and elevate global healthcare through relentless innovation without compromising standards.";
+
+export const coreValueStatement =
+  "Driven by an uncompromising commitment to Integrity & Trust, we foster a culture of Accountability and Teamwork to relentlessly pursue Continuous Improvement and Customer Success. To uphold the highest standards of safety, quality, and regulatory compliance to deliver life-enhancing pharmaceutical solutions that protect health and improve patient lives worldwide.";
+
+export const coreValueSpecialization =
+  "We specialize in the manufacturing and development of pharmaceutical products, including Tablets, Capsules, Injectables, Eye drops, Ointments, and API intermediates along with services in CMO, CDMO, CRO, API, Animal Health Products, Flavors & Fragrances, Vitamins, Fine & Specialty Chemicals.";
+
+export const trustQuote =
+  "Our goal is to contribute to better healthcare while building lasting trust with our customers, partners, healthcare professionals, and communities";
+
+export const diversityStatement = [
+  "Established in 2018, GM Pharma is a global Pharmaceutical and Nutraceutical company delivering high-quality, reliable, and innovative healthcare solutions. With a portfolio of 150+ Pharmaceutical and Nutraceutical products, we are committed to meeting international standards of quality, safety, and regulatory compliance.",
+  "Our Manufacturing Capabilities are supported by WHO-GMP-approved facilities, and PIC/S-compliant manufacturing standards, enabling us to serve diverse international markets with confidence. Our global services encompass CMO, CDMO, CRO, API, Animal Health Products, Flavors & Fragrances, Vitamins, Fine & Specialty Chemicals, and other specialized healthcare solutions.",
+  "Driven by quality, innovation, regulatory excellence, and global partnerships, GM Pharma strives to be a trusted partner.",
+] as const;
+
+export const collaborationsStatement =
+  "We accelerate global growth through strategy, powerful partnerships, and collaborating seamlessly with multi-national enterprises, agile startups, and premier research institutes. Our unmatched value proposition is forged by the synergy of five core capabilities: pioneering Innovation & Technology, scalable Process Development, flawless Project Management, rigorous Regulatory Mastery, and unyielding Quality Excellence.";
+
+export const whatWeDo = [
+  {
+    title: "Pharmaceutical and Nutraceutical Manufacturing",
+    description:
+      "Manufacturers of 150+ Pharmaceutical & Nutraceutical Products with EU, US FDA Regulatory Standards.",
+  },
+  {
+    title: "Global Services",
+    description:
+      "CMO, CDMO, CRO, API, Animal Health Products, Flavors & Fragrances, Vitamins, Fine & Specialty Chemicals.",
+  },
+] as const;
+
+export const excellenceStatement = [
+  "At GM Pharma, we are committed to advancing healthcare through innovation, quality, and patient-focused solutions. With integrity, expertise, and a focus on continuous improvement, we strive to deliver reliable pharmaceutical solutions that contribute to healthier lives worldwide.",
+  "We also believe in empowering people through healthcare education and awareness. By providing clear and reliable information through articles, videos, brochures, and digital platforms, we help healthcare professionals, patients, and communities make informed decisions and build a better understanding of health and wellness.",
+] as const;
 
 /**
  * Quality & compliance claims supplied by GM Pharma.

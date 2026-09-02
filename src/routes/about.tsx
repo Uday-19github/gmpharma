@@ -9,11 +9,17 @@ import { StatCounter } from "@/components/site/StatCounter";
 import { Button } from "@/components/ui/button";
 import {
   collaborationCapabilities,
+  collaborationsStatement,
   company,
+  coreValueSpecialization,
+  coreValueStatement,
   coreValues,
+  diversityStatement,
   mission,
   stats,
+  trustQuote,
   vision,
+  whatWeDo,
 } from "@/data/company";
 
 const title = "About GM Pharma — Third Party Pharma Manufacturing Company";
@@ -70,15 +76,25 @@ function AboutPage() {
             />
             <div className="mt-6 space-y-4 text-[0.98rem] leading-relaxed text-muted-foreground">
               <p>
-                GM Pharma was founded by {company.founders.join(" and ")}, with extensive experience
-                in the pharmaceutical formulation domain. Established in {company.establishedYear},
-                the company serves domestic and international customers with cost-effective,
-                customer-centric manufacturing solutions.
+                {company.name} is an emerging Pharmaceutical &amp; Nutraceutical manufacturing
+                company founded by {company.founders.join(" and ")}, who bring extensive experience
+                and expertise in the pharmaceutical formulation domain.
               </p>
               <p>
-                We specialise in Tablets, Capsules, Injectables, Eye Drops, Ointments and API
-                intermediates, alongside services including CMO, CDMO, CRO, Animal Health Products,
-                Flavors &amp; Fragrances, Vitamins and Fine &amp; Specialty Chemicals.
+                {company.name} is focused on the development, manufacturing, and commercialization
+                of a diverse portfolio of pharmaceutical products and services. We specialize in the
+                manufacturing and development of pharmaceutical products, including Tablets,
+                Capsules, Injectables, Eye drops, Ointments, and API intermediates along with
+                services in CMO (Contract Manufacturing Organization), CDMO (Contract Development
+                and Manufacturing Organization), CRO (Contract Research Organization), API (Active
+                Pharmaceutical Ingredients), Animal Health Products, Flavors &amp; Fragrances,
+                Vitamins, Fine &amp; Specialty Chemicals.
+              </p>
+              <p>
+                With our headquarters in India, {company.name} strives to be a trusted and reliable
+                pharmaceutical manufacturing partner, delivering high-quality, cost-effective, and
+                customer-centric solutions while creating long-term value and contributing to the
+                growth of the domestic and global pharmaceutical industry.
               </p>
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -152,9 +168,27 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Our Core Value */}
       <section className="py-16 sm:py-20">
         <div className="container-page">
-          <SectionHeading eyebrow="Core Values" title="The principles behind every batch we make" />
+          <SectionHeading
+            eyebrow="Our Core Value"
+            title="The principles behind every batch we make"
+          />
+          <Reveal delay={60} className="mx-auto mt-8 max-w-3xl space-y-4 text-center">
+            <p className="text-base leading-relaxed text-muted-foreground">{coreValueStatement}</p>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              {coreValueSpecialization}
+            </p>
+          </Reveal>
+          <Reveal
+            delay={100}
+            className="mx-auto mt-8 max-w-2xl rounded-2xl border border-border bg-surface p-6 text-center"
+          >
+            <p className="font-display text-base leading-relaxed text-navy italic">
+              "{trustQuote}"
+            </p>
+          </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {coreValues.map((value, index) => (
               <Reveal
@@ -173,12 +207,48 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Diversity and Continuous Development */}
+      <section className="bg-surface py-16 sm:py-20">
+        <div className="container-page">
+          <SectionHeading eyebrow="Our Growth" title="Diversity and Continuous Development" />
+          <div className="mx-auto mt-8 max-w-3xl space-y-4">
+            {diversityStatement.map((paragraph, index) => (
+              <Reveal key={index} delay={index * 60}>
+                <p className="text-base leading-relaxed text-muted-foreground">{paragraph}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do */}
+      <section className="py-16 sm:py-20">
+        <div className="container-page">
+          <SectionHeading eyebrow="Our Focus" title="What We Do" />
+          <div className="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
+            {whatWeDo.map((item, index) => (
+              <Reveal
+                key={item.title}
+                delay={index * 70}
+                className="card-hover rounded-2xl border border-border bg-card p-7"
+              >
+                <h3 className="font-display text-lg font-bold text-navy">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {item.description}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Collaborations */}
       <section className="bg-surface py-16 sm:py-20">
         <div className="container-page">
           <SectionHeading
-            eyebrow="Collaboration"
-            title="How we work with partners"
-            description="From first enquiry to commercial supply, our teams stay accountable for capability, compliance and timelines."
+            eyebrow="Partnerships"
+            title="Collaborations"
+            description={collaborationsStatement}
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {collaborationCapabilities.map((item, index) => (
