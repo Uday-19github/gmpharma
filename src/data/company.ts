@@ -15,7 +15,7 @@ export const company = {
     "GM Pharma is an emerging Pharmaceutical & Nutraceutical manufacturing company delivering high-quality, cost-effective and customer-centric manufacturing solutions for domestic and global markets.",
   founders: ["Mr. G. H. K. Reddy", "Ms. K. Shanthala"],
   email: "gm@gmpharma.us",
-  phones: ["+91 94480 84119", "080-28468919", "080-42093529"],
+  phones: ["+91 94480 84119", "+91 91132 75641", "080-28468919", "080-42093529"],
   whatsapp: {
     number: "919448084119",
     display: "+91 94480 84119",
@@ -33,6 +33,10 @@ export const company = {
     factory: {
       label: "Factory Address",
       lines: ["Sy no 142/2, Sathyasai dst, Gollapuram,", "Hindupur, Andhra Pradesh, India"],
+    },
+    us: {
+      label: "US Address",
+      lines: ["3202 McKnight East Dr PMB 200,", "Pittsburgh, PA 15237, USA"],
     },
   },
   social: [

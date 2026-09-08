@@ -22,7 +22,7 @@ import {
   whatWeDo,
 } from "@/data/company";
 
-const title = "About GM Pharma — Third Party Pharma Manufacturing Company";
+const title = "About GM Pharma";
 const description =
   "GM Pharma is an emerging pharmaceutical and nutraceutical manufacturing company delivering quality-driven contract manufacturing, development and research services.";
 
@@ -45,7 +45,7 @@ function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        title="Third Party Pharma Manufacturing Company"
+        title="About GM Pharma"
         description={company.shortDescription}
         crumb="About Us"
       />
@@ -59,21 +59,14 @@ function AboutPage() {
               loading="lazy"
               className="aspect-[4/3] w-full rounded-2xl object-cover shadow-lift"
             />
-            <div className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-border bg-card px-6 py-5 shadow-lift sm:block">
-              <p className="font-display text-2xl font-extrabold text-navy">
-                Est. {company.establishedYear}
-              </p>
-              <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
-                Founder-led manufacturing
-              </p>
-            </div>
           </Reveal>
           <div>
-            <SectionHeading
-              align="left"
-              eyebrow="Who We Are"
-              title="Quality-driven manufacturing, built on experience"
-            />
+            <Reveal>
+              <p className="flex items-center gap-3 text-xs font-bold tracking-[0.24em] text-primary uppercase">
+                <span aria-hidden="true" className="h-px w-8 bg-primary/60" />
+                Who We Are
+              </p>
+            </Reveal>
             <div className="mt-6 space-y-4 text-[0.98rem] leading-relaxed text-muted-foreground">
               <p>
                 {company.name} is an emerging Pharmaceutical &amp; Nutraceutical manufacturing

@@ -85,7 +85,7 @@ function Index() {
               <Reveal className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 backdrop-blur-sm">
                 <Sparkles className="size-3.5 text-primary" />
                 <span className="text-xs font-bold tracking-[0.2em] text-navy-foreground/90 uppercase">
-                  {company.positioning} · Est. {company.establishedYear}
+                  {company.positioning}
                 </span>
               </Reveal>
 
@@ -222,21 +222,10 @@ function Index() {
                 className="aspect-[4/3] h-full w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-4 hidden rounded-2xl gradient-navy px-6 py-5 text-navy-foreground shadow-lift sm:block">
-              <p className="font-display text-2xl font-extrabold">
-                {new Date().getFullYear() - company.establishedYear}+ yrs
-              </p>
-              <p className="text-xs font-semibold tracking-wide text-navy-foreground/80 uppercase">
-                Of manufacturing excellence
-              </p>
-            </div>
           </Reveal>
           <Reveal delay={100}>
             <div>
               <p className="text-xs font-bold tracking-[0.24em] text-primary uppercase">About Us</p>
-              <h2 className="mt-3 text-3xl leading-tight font-extrabold text-navy sm:text-4xl">
-                Third-Party Pharma Manufacturing, Built on Experience
-              </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground">
                 {company.name} is an emerging Pharmaceutical &amp; Nutraceutical manufacturing
                 company founded by {company.founders.join(" and ")}, who bring extensive experience

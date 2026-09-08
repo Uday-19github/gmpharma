@@ -39,9 +39,7 @@ export function Header() {
     <header className="sticky top-0 z-50">
       <div className="hidden bg-navy text-navy-foreground lg:block">
         <div className="container-page flex h-10 items-center justify-between text-xs">
-          <p className="font-medium tracking-wide text-navy-foreground/85">
-            {company.positioning} · Est. {company.establishedYear}
-          </p>
+          <p className="font-medium tracking-wide text-navy-foreground/85">{company.positioning}</p>
           <div className="flex items-center gap-6">
             <a
               href={`tel:${company.phones[0].replace(/\s/g, "")}`}

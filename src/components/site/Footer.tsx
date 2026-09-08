@@ -82,6 +82,10 @@ export function Footer() {
             <MapPin className="mt-0.5 size-4 shrink-0 text-primary" />
             <span>Factory: {company.offices.factory.lines.join(" ")}</span>
           </p>
+          <p className="flex gap-3 py-1 text-sm text-navy-foreground/75">
+            <MapPin className="mt-0.5 size-4 shrink-0 text-primary" />
+            <span>US: {company.offices.us.lines.join(" ")}</span>
+          </p>
           {company.phones.map((phone) => (
             <a
               key={phone}

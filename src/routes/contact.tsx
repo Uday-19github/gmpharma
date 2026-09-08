@@ -36,24 +36,26 @@ function ContactPage() {
       />
 
       <section className="py-16 sm:py-20">
-        <div className="container-page grid gap-6 lg:grid-cols-3">
-          {[company.offices.office, company.offices.factory].map((office, index) => (
-            <Reveal
-              key={office.label}
-              delay={index * 80}
-              className="card-hover rounded-2xl border border-border bg-card p-6 shadow-soft"
-            >
-              <span className="grid size-12 place-items-center rounded-xl bg-primary/10 text-primary">
-                <MapPin className="size-6" />
-              </span>
-              <p className="mt-4 font-display text-base font-bold text-navy">{office.label}</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {office.lines.join(" ")}
-              </p>
-            </Reveal>
-          ))}
+        <div className="container-page grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {[company.offices.office, company.offices.factory, company.offices.us].map(
+            (office, index) => (
+              <Reveal
+                key={office.label}
+                delay={index * 80}
+                className="card-hover rounded-2xl border border-border bg-card p-6 shadow-soft"
+              >
+                <span className="grid size-12 place-items-center rounded-xl bg-primary/10 text-primary">
+                  <MapPin className="size-6" />
+                </span>
+                <p className="mt-4 font-display text-base font-bold text-navy">{office.label}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {office.lines.join(" ")}
+                </p>
+              </Reveal>
+            ),
+          )}
           <Reveal
-            delay={160}
+            delay={240}
             className="card-hover rounded-2xl border border-border bg-card p-6 shadow-soft"
           >
             <span className="grid size-12 place-items-center rounded-xl bg-primary/10 text-primary">
