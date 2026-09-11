@@ -9,7 +9,7 @@ import { company, excellenceStatement, mapsQuery, trustQuote, whatsappLink } fro
 
 const title = "Contact GM Pharma — Bangalore Office & Hindupur Factory";
 const description =
-  "Reach GM Pharma in Hebbal, Bangalore or our manufacturing facility in Hindupur, Andhra Pradesh. Call, email or message us on WhatsApp.";
+  "Reach GM Pharma in Rajanukunte, Bangalore or our manufacturing facility in Hindupur, Andhra Pradesh. Call, email or message us on WhatsApp.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({

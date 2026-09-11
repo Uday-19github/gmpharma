@@ -271,7 +271,7 @@ Use the approved content from the supplied GM Pharma document.
 
 Use this positioning:
 
-GM Pharma is an emerging Pharmaceutical & Nutraceutical manufacturing company founded by Mr. G. H. K. Reddy and Ms. K. Shanthala, who bring extensive experience and expertise in the pharmaceutical formulation domain.
+GM Pharma is an emerging Pharmaceutical & Nutraceutical manufacturing company founded by Mr. G. H. K. Reddy and Mrs. K. Shanthala, who bring extensive experience and expertise in the pharmaceutical formulation domain.
 
 GM Pharma focuses on the development, manufacturing, and commercialization of pharmaceutical products and services including Tablets, Capsules, Injectables, Eye Drops, Ointments, API intermediates, CMO, CDMO, CRO, Animal Health Products, Flavors & Fragrances, Vitamins, Fine & Specialty Chemicals.
 

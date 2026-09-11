@@ -13,7 +13,7 @@ export const company = {
   establishedYear: 2018,
   shortDescription:
     "GM Pharma is an emerging Pharmaceutical & Nutraceutical manufacturing company delivering high-quality, cost-effective and customer-centric manufacturing solutions for domestic and global markets.",
-  founders: ["Mr. G. H. K. Reddy", "Ms. K. Shanthala"],
+  founders: ["Mr. G. H. K. Reddy", "Mrs. K. Shanthala"],
   email: "gm@gmpharma.us",
   phones: ["+91 94480 84119", "+91 91132 75641", "080-28468919", "080-42093529"],
   whatsapp: {
@@ -26,8 +26,8 @@ export const company = {
     office: {
       label: "Office Address",
       lines: [
-        "G M Pharma, #29, B J Complex, First Floor,",
-        "Hebbal, Bangalore - 560024, Karnataka, India",
+        "G M Pharma, 25 MV Sundridge,",
+        "Rajanukunte, Bangalore - 560064, Karnataka, India",
       ],
     },
     factory: {
@@ -51,7 +51,7 @@ export const whatsappLink = `https://wa.me/${company.whatsapp.number}?text=${enc
 )}`;
 
 export const mapsQuery = encodeURIComponent(
-  "G M Pharma, #29, B J Complex, First Floor, Hebbal, Bangalore 560024, Karnataka",
+  "G M Pharma, 25 MV Sundridge, Rajanukunte, Bangalore 560064, Karnataka",
 );
 
 export const stats = [

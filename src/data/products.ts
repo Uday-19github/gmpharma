@@ -161,6 +161,12 @@ export const products: Product[] = [
     "Topical ointment and semi-solid manufacturing. Specifications are shared on enquiry.",
   ),
   onRequest(
+    "formulations",
+    "Chemotherapy Drugs",
+    "Oncology dosage",
+    "Chemotherapy drug manufacturing for oncology formulations. Specifications are shared on enquiry.",
+  ),
+  onRequest(
     "api",
     "Active Pharmaceutical Ingredients",
     "API",
